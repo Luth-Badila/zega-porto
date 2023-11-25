@@ -1,12 +1,12 @@
 import { ButtonComponent } from "./components/Button";
-import NavbarFixed from "./components/Navbar";
+import { Home } from "./components/Home";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <NavbarFixed />
+      <Home />
       <h1>This Is My Portofolio</h1>
       <ButtonComponent />
     </>
