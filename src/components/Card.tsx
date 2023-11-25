@@ -1,36 +1,26 @@
 import Car1 from "../assets/images/1.jpg";
+import "../assets/styles/Card.css";
 
 export default function Card() {
+  interface lists {
+    id: number;
+    url: any;
+    title: string;
+  }
+
   const lists = [
     {
       id: 1,
       url: Car1,
       price: "RP 30.000",
-      rating: "4.8",
-      sold: "10 sold",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-      city: "Konoha",
+      tech: {
+        one: "vue.js",
+        two: "tailwind",
+      },
     },
-    // {
-    //   id: 2,
-    //   url: card2,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
-    // {
-    //   id: 3,
-    //   url: card3,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
+
     {
-      id: 4,
+      id: 2,
       url: Car1,
       price: "RP 30.000",
       rating: "4.8",
@@ -38,44 +28,8 @@ export default function Card() {
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
       city: "Konoha",
     },
-    // {
-    //   id: 5,
-    //   url: card5,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
-    // {
-    //   id: 6,
-    //   url: card6,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
-    // {
-    //   id: 7,
-    //   url: card7,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
-    // {
-    //   id: 8,
-    //   url: card8,
-    //   price: "RP 30.000",
-    //   rating: "4.8",
-    //   sold: "10 sold",
-    //   description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!",
-    //   city: "Konoha",
-    // },
     {
-      id: 9,
+      id: 3,
       url: Car1,
       price: "RP 30.000",
       rating: "4.8",
@@ -85,81 +39,38 @@ export default function Card() {
     },
   ];
   return (
-    <section className="flex">
-      <section className="card">
-        <div className="imgBx">
-          <img className="imgBx" src={Car1} alt="" />
-        </div>
-        <div className="content">
-          <span className="price"></span>
-        </div>
-      </section>
-    </section>
-    // <section className="card2-container">
-    //   {lists.map((list) => {
-    //     return (
-    //       <div className="card2" key={list?.url}>
-    //         <div className="imgBx">
-    //           <img className="imgBx" alt="sliderImage" src={list?.url} />;
-    //         </div>
-    //         <div className="content2">
-    //           <span className="price">
-    //             <a href="#">{list?.price}</a>
-    //           </span>
-    //           <div className="col">
-    //             <div className="flex-long">
-    //               <div className="flex-center">
-    //                 <i icon="zondicons:star-full" fontSize={20} color="yellow" />
-    //                 <span className="rating">{list?.rating}</span>
-    //                 <span className="rating">|</span>
-    //                 <span className="rating">{list?.sold}</span>
-    //               </div>
-    //               <div className="flex-center">
-    //                 <p className="rating">{list?.city}</p>
-    //               </div>
-    //             </div>
-    //             <div className="description">
-    //               <p>{list?.description}</p>
-    //             </div>
-    //             <button className="cart">
-    //               <i icon="mdi:cart-outline" fontSize={20} color="yellow" />
-    //               <span>Add to cart</span>
-    //             </button>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     );
-    //   })}
-    //   {/* <div className="card2">
+    // <section className="card-container">
+    //   <div className="card">
     //     <div className="imgBx">
-    //       <Image className="imgBx" alt="sliderImage" src={Car1} />;
+    //       <img src={Car1} alt="car-image" className="" />
     //     </div>
-    //     <div className="content2">
+    //     <div className="content">
     //       <span className="price">
-    //         <Link href="#">$1.000.000</Link>
+    //         <a href="">$1000</a>
     //       </span>
-    //       <div className="col">
-    //         <div className="flex-long">
-    //           <div className="flex-center">
-    //             <Icon icon="zondicons:star-full" fontSize={20} color="yellow" />
-    //             <span className="rating">4.8</span>
-    //             <span className="rating">|</span>
-    //             <span className="rating">10 sold</span>
-    //           </div>
-    //           <div className="flex-center">
-    //             <p className="rating">City</p>
-    //           </div>
-    //         </div>
-    //         <div className="description">
-    //           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta incidunt, libero iusto at ipsa autem reiciendis nihil qui a!</p>
-    //         </div>
-    //         <button className="cart">
-    //           <Icon icon="mdi:cart-outline" fontSize={20} color="yellow" />
-    //           <span>Add to cart</span>
-    //         </button>
-    //       </div>
+    //       <ul>
+    //         <li>Somewhere</li>
+    //         <li>Somewhere</li>
+    //         <li>Somewhere</li>
+    //       </ul>
     //     </div>
-    //   </div> */}
+    //   </div>
     // </section>
+    <section className="card-container">
+      {lists.map((list) => {
+        return (
+          <div className="card" key={list?.url}>
+            <div className="imgBx">
+              <img alt="image" src={list?.url} />;
+            </div>
+            <div className="content">
+              <span className="price">
+                <a href="#">{list?.price}</a>
+              </span>
+            </div>
+          </div>
+        );
+      })}
+    </section>
   );
 }

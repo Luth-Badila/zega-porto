@@ -1,16 +1,16 @@
 import { ButtonComponent } from "./components/Button";
 import { Home } from "./components/Home";
+import Footer from "./components/Footer";
 import Card from "./components/Card";
-
-import "./App.css";
 
 function App() {
   return (
     <>
+      <Home />
       <Card />
-      {/* <Home />
       <h1>This Is My Portofolio</h1>
-      <ButtonComponent /> */}
+      <ButtonComponent />
+      <Footer />
     </>
   );
 }
