@@ -40,18 +40,18 @@ body {
     background-color: black;
     color: white;
     width: 100%;
-    padding: 8px 24px;
+    padding: 20px 24px;
     height: 50vh;
     .footer-sections {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 50px;
       .content-section {
         display: flex;
-        flex-direction: column;
         gap: 5px;
+        width: 100%;
         text-align: center;
         justify-content: space-between;
         align-items: center;
@@ -62,9 +62,16 @@ body {
         }
         .inner-section {
           display: flex;
-          gap: 5px;
-          p {
-            margin: 0;
+          gap: 10px;
+          justify-content: center;
+          text-align: center;
+          .section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+              margin: 0;
+            }
           }
         }
       }
@@ -74,6 +81,13 @@ body {
         justify-content: center;
         align-items: center;
         gap: 3px;
+      }
+    }
+    .contact-follow {
+      .contact-icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
       }
     }
   }

@@ -1,3 +1,8 @@
+import { IoLogoFacebook } from "react-icons/io";
+import { GrInstagram } from "react-icons/gr";
+import { FaLinkedin } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
+
 function Footer() {
   return (
     <div className="footer">
@@ -6,25 +11,25 @@ function Footer() {
           <div className="content">
             <h1>Customare Care</h1>
             <div className="inner-section">
-              <div className="flex flex-col gap-3">
+              <div className="section">
                 <p>Contact Us</p>
                 <p>Shipping</p>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="section">
                 <p>Returns</p>
                 <p>Guiding</p>
               </div>
             </div>
           </div>
           <div className="text-7xl">Logo Here</div>
-          <div className="flex flex-col gap-3">
-            <h1>Corporate</h1>
+          <div className="content">
+            <h1>Customare Care</h1>
             <div className="inner-section">
-              <div className="flex flex-col gap-3">
+              <div className="section">
                 <p>Contact Us</p>
                 <p>Shipping</p>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="section">
                 <p>Returns</p>
                 <p>Guiding</p>
               </div>
@@ -32,12 +37,20 @@ function Footer() {
           </div>
         </div>
         <div className="contact-follow">
-          <h3 className="uppercase text-xl font-semibold">Contact and Follow Us On</h3>
-          <div className="flex gap-3 items-center">
-            <i className="ant-design:facebook-filled" />
-            <i className="cib:instagram" />
-            <i className="fa-brands:whatsapp" />
-            <i className="mdi:youtube" />
+          <h3 className="contact-title">Contact and Follow Us On</h3>
+          <div className="contact-icons">
+            <a href="">
+              <IoLogoFacebook color="white" size={40} />
+            </a>
+            <a href="">
+              <GrInstagram color="white" size={30} />
+            </a>
+            <a href="">
+              <FaLinkedin color="white" size={35} />
+            </a>
+            <a href="">
+              <SiWhatsapp color="white" size={30} />
+            </a>
           </div>
         </div>
       </div>
