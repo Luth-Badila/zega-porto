@@ -3,7 +3,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-sections">
         <div className="content-section">
-          <div>
+          <div className="content">
             <h1>Customare Care</h1>
             <div className="inner-section">
               <div className="flex flex-col gap-3">

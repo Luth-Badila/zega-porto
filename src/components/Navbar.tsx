@@ -17,13 +17,13 @@ export default function NavbarFixed() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <NavLink href="#home">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Login</NavLink>
+              <NavLink href="#portofolio">Portofolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Signup</NavLink>
+              <NavLink href="#">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

@@ -3,10 +3,16 @@
 body {
   background: $secondary;
   font-size: 16px;
-  h1 {
-    color: $primary;
-    padding: 0.5rem 1rem;
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    .container-fluid {
+      gap: 40px;
+    }
   }
+  // Home
   .split-background {
     display: flex;
     height: 100vh;
@@ -17,8 +23,16 @@ body {
     .right-panel {
       flex: 2;
       background-color: blue;
+      .biodata {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
     }
   }
+  // Footer styling
   .footer {
     display: flex;
     flex-direction: column;
@@ -26,7 +40,7 @@ body {
     background-color: black;
     color: white;
     width: 100%;
-    padding: 8px 24px; /* Adjust padding as needed */
+    padding: 8px 24px;
     height: 50vh;
     .footer-sections {
       display: flex;

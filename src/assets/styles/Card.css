@@ -10,7 +10,9 @@
     align-items: center;
     min-height: 100vh;
     border-style: none;
+    padding: 5rem 0;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .card-container .card {
@@ -110,7 +112,7 @@
     box-shadow: -10px 10px 0 #232949;
 }
 
-.card-container .card .content .price a {
+.card-container .card .content .price p {
     position: relative;
     background: #fff;
     padding: 10px 20px;
@@ -120,163 +122,9 @@
     font-weight: 500;
     color: #333;
     text-decoration: none;
+    text-align: center;
 }
 
-/* .flex-long {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    padding-top: 1px;
-  }
-  
-  .flex-center {
-    display: flex;
-    align-items: center;
-    gap: 1px;
-  }
-  
-  .col {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
-  
-  .rating {
-    font-size: 1rem;
-    color: white;
-  }
-  
-  .description {
-    font-size: 0.875rem;
-    color: white;
-  }
-  
-  .cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    border: 1px solid white;
-    color: white;
-    border-radius: 8px;
-  }
-  
-  .card2-container {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 10px 0;
-  }
-  
-  @media (min-width: 992px) {
-    .card2-container {
-      flex-direction: row;
-    }
-  }
-  
-  .card2 {
-    position: relative;
-    width: 320px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .card2 .imgBx {
-    position: relative;
-    width: 100%;
-    height: 240px;
-    background: #f00;
-    border-radius: 15px;
-    background-size: cover;
-  }
-  
-  .card2 .imgBx::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #fff;
-  }
-  
-  .card2 .imgBx::after {
-    content: '';
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #fff;
-  }
-  
-  .card2 .content2 {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background: #232949;
-    border-radius: 15px;
-    border-top-left-radius: 0;
-    padding: 15px;
-  }
-  
-  .card2 .content2 ul {
-    color: #fff;
-    list-style: disc;
-  }
-  
-  .card2 .content2 .price {
-    position: absolute;
-    height: 80px;
-    background: #232949;
-    width: 50%;
-    top: -80px;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #fff;
-    border-radius: 0 25px 0 0;
-    left: 0;
-  }
-  
-  .card2 .content2 .price::before {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px -10px 0 #fff;
-  }
-  
-  .card2 .content2 .price::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    bottom: 0;
-    right: -25px;
-    height: 25px;
-    background: transparent;
-    border-radius: 50%;
-    box-shadow: -10px 10px 0 #232949;
-  }
-  
-  .card2 .content2 .price a {
-    position: relative;
-    background: #fff;
-    padding: 10px;
-    margin: 15px;
-    display: block;
-    border-radius: 7px;
-    font-weight: medium;
-    color: #333;
-  } */
+.card-container .card .content .desc {
+  padding: 2px 0;
+}
