@@ -13,6 +13,7 @@
     padding: 5rem 0;
     gap: 50px;
     flex-wrap: wrap;
+  
 }
 
 .card-container .card {
@@ -68,7 +69,7 @@
     position: relative;
     width: 100%;
     height: 150px;
-    background: #232949;
+    background: linear-gradient(90deg, #d00606 30%, #db0202 68.47%, #ff0000 91.61%);
     border-radius: 15px;
     border-top-left-radius: 0;
     padding: 5px 15px;
@@ -84,7 +85,7 @@
     left:0;
     height: 80px;
     width: 50%;
-    background: #232949;
+    background: linear-gradient(90deg, #d00606 30%, #db0202 68.47%, #ff0000 91.61%);
     border-top: 10px solid #fff;
     border-right: 10px solid #fff;
     border-top-right-radius: 25px;
@@ -109,7 +110,7 @@
     height: 25px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: -10px 10px 0 #232949;
+    box-shadow: -10px 10px 0 linear-gradient(90deg, #d00606 30%, #db0202 68.47%, #ff0000 91.61%);
 }
 
 .card-container .card .content .price p {

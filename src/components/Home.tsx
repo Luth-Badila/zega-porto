@@ -1,11 +1,13 @@
-// SplitBackground.tsx
 import React from "react";
+import homePhoto from "../assets/images/home-photo.png";
 
 export const Home: React.FC = () => {
   return (
     <div id="home" className="split-background">
       <div className="left-panel">
-        <img src="" alt="photo-profile" />
+        <div className="photo">
+          <img src={homePhoto} alt="photo-profile" />
+        </div>
       </div>
       <div className="right-panel">
         <div className="biodata">

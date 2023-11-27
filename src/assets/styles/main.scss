@@ -1,28 +1,49 @@
 @use "./variables.scss" as *;
 
 body {
-  background: $secondary;
   font-size: 16px;
-  .navbar-nav {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    width: 100%;
-    .container-fluid {
-      gap: 40px;
+  // Navbar
+  .navbar {
+    background: $red-navbar;
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      width: 100%;
+      .container-fluid {
+        gap: 40px;
+      }
     }
   }
   // Home
   .split-background {
     display: flex;
     height: 100vh;
+    color: $secondary;
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
     .left-panel {
       flex-grow: 1;
-      background-color: teal;
+      background: $red-white-gradient;
+      .photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 30rem;
+          height: 30rem;
+          bottom: 50px;
+          right: 50px;
+        }
+      }
     }
     .right-panel {
       flex: 2;
-      background-color: blue;
+      background: $red-white-gradient-2;
       .biodata {
         display: flex;
         flex-direction: column;
@@ -32,7 +53,23 @@ body {
       }
     }
   }
-  // Footer styling
+  // Form Style
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 50vh;
+    padding: 200px 0;
+    .input {
+      display: flex;
+      flex-direction: column;
+      label {
+        text-align: center;
+      }
+    }
+  }
+  // Footer style
   .footer {
     display: flex;
     flex-direction: column;
@@ -48,29 +85,38 @@ body {
       align-items: center;
       justify-content: space-between;
       gap: 50px;
+      @media (max-width: 640px) {
+        gap: 20px;
+      }
       .content-section {
         display: flex;
-        gap: 5px;
+        gap: 100px;
         width: 100%;
         text-align: center;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        h1 {
-          text-transform: uppercase;
-          font-size: 1.5rem;
-          font-weight: bold;
+        @media (max-width: 640px) {
+          flex-direction: column;
+          gap: 20px;
         }
-        .inner-section {
-          display: flex;
-          gap: 10px;
-          justify-content: center;
-          text-align: center;
-          .section {
+        .content {
+          h1 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          .inner-section {
             display: flex;
-            flex-direction: column;
             gap: 10px;
-            p {
-              margin: 0;
+            justify-content: center;
+            text-align: center;
+            .section {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              p {
+                margin: 0;
+              }
             }
           }
         }

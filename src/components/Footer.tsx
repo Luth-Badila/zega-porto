@@ -21,7 +21,6 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="text-7xl">Logo Here</div>
           <div className="content">
             <h1>Customare Care</h1>
             <div className="inner-section">

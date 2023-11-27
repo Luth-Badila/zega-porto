@@ -7,7 +7,7 @@ export default function NavbarFixed() {
 
   return (
     <div>
-      <Navbar fixed="top" color="danger" dark expand="md">
+      <Navbar fixed="top" dark expand="md">
         <NavbarBrand href="/">Brand</NavbarBrand>
         <NavbarToggler
           onClick={() => {
