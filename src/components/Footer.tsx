@@ -3,7 +3,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import { SiWhatsapp } from "react-icons/si";
 
-function Footer() {
+export const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="footer-sections">
@@ -27,6 +27,6 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

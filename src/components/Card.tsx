@@ -7,7 +7,7 @@ import porto6 from "../assets/images/porto6.jpg";
 import porto7 from "../assets/images/porto7.jpg";
 import "../assets/styles/Card.css";
 
-export default function Card() {
+export const Card: React.FC = () => {
   const lists = [
     {
       id: 1,
@@ -72,4 +72,4 @@ export default function Card() {
       })}
     </section>
   );
-}
+};

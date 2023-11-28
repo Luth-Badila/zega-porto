@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar, NavItem, NavbarToggler, Collapse, NavLink, Nav, NavbarBrand } from "reactstrap";
 
-export default function NavbarFixed() {
+export const NavbarFixed: React.FC = () => {
   // Collapse isOpen State
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -30,4 +30,4 @@ export default function NavbarFixed() {
       </Navbar>
     </div>
   );
-}
+};
