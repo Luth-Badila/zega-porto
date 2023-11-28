@@ -7,34 +7,6 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-sections">
-        <div className="content-section">
-          <div className="content">
-            <h1>Customare Care</h1>
-            <div className="inner-section">
-              <div className="section">
-                <p>Contact Us</p>
-                <p>Shipping</p>
-              </div>
-              <div className="section">
-                <p>Returns</p>
-                <p>Guiding</p>
-              </div>
-            </div>
-          </div>
-          <div className="content">
-            <h1>Customare Care</h1>
-            <div className="inner-section">
-              <div className="section">
-                <p>Contact Us</p>
-                <p>Shipping</p>
-              </div>
-              <div className="section">
-                <p>Returns</p>
-                <p>Guiding</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="contact-follow">
           <h3 className="contact-title">Contact and Follow Us On</h3>
           <div className="contact-icons">

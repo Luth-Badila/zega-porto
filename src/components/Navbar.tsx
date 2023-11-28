@@ -23,7 +23,7 @@ export default function NavbarFixed() {
               <NavLink href="#portofolio">Portofolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

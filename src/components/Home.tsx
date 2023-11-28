@@ -14,7 +14,9 @@ export const Home: React.FC = () => {
           <h1>Muhammad Lutfi Badila</h1>
           <p>Universitas Muhammadiyah Sidoarjo</p>
           <p>FE Developer</p>
-          <p>Pengalaman kurang dari 1 tahun</p>
+          <p>I have less than one year experience</p>
+          <p>My Skill</p>
+          <div className="skill"></div>
         </div>
       </div>
     </div>
