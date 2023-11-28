@@ -78,6 +78,10 @@ const Form: React.FC = () => {
     return isValid;
   };
 
+  const isFormValid = () => {
+    return Object.values(errors).every((error) => error === "") && Object.values(formData).every((value) => value !== "");
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -94,7 +98,7 @@ const Form: React.FC = () => {
         error: "",
       });
     } else {
-      console.log("Form has errors. Please fix them.");
+      alert("Form has errors. Please fix them.");
       setFormStatus({
         success: "",
         error: "Form has errors. Please fix them.",
@@ -120,19 +124,21 @@ const Form: React.FC = () => {
 
           <div className="input">
             <label>Phone:</label>
-            <input type="text" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
+            <input type="text" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder="08xxxxxxxxxx" />
             <div className="error">{errors.phone}</div>
           </div>
 
           <div className="input">
             <label>Message:</label>
-            <textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
+            <textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Write uour message ..." />
             <div className="error">{errors.message}</div>
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={!isFormValid()}>
+            Submit
+          </button>
           {formStatus.success && <div className="success-message">{formStatus.success}</div>}
-          {formStatus.error && <div className="error-message">{formStatus.error}</div>}
+          {formStatus.error && <div className="message">{formStatus.error}</div>}
         </form>
       </div>
       <div className="photo-section">
