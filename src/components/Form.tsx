@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import myPhoto from "../assets/images/my-photo.png";
+import myPhoto from "../assets/images/my-photo-circle.png";
 
 interface FormData {
   name: string;
@@ -107,44 +107,42 @@ const Form: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="form-section">
+    <section id="contact">
       <div className="form-section">
         <form onSubmit={handleSubmit} className="form">
-          <div className="input">
-            <label>Name:</label>
-            <input type="text" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="min 3 characters" />
-            <div className="error">{errors.name}</div>
+          <div className="photo-section">
+            <img src={myPhoto} alt="circle-photo" />
+            <h1>Feel Free To Contact Me</h1>
           </div>
+          <div className="form-input">
+            <div className="input">
+              <label>Name:</label>
+              <input type="text" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="min 3 characters" />
+              <div className="error">{errors.name}</div>
+            </div>
+            <div className="input">
+              <label>Email:</label>
+              <input type="text" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} placeholder="name@.email.com" />
+              <div className="error">{errors.email}</div>
+            </div>
+            <div className="input">
+              <label>Phone:</label>
+              <input type="text" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder="08xxxxxxxxxx" />
+              <div className="error">{errors.phone}</div>
+            </div>
+            <div className="input">
+              <label>Message:</label>
+              <textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Write uour message ..." />
+              <div className="error">{errors.message}</div>
+            </div>
 
-          <div className="input">
-            <label>Email:</label>
-            <input type="text" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} placeholder="name@.email.com" />
-            <div className="error">{errors.email}</div>
+            <button type="submit" disabled={!isFormValid()}>
+              Submit
+            </button>
+            {formStatus.success && <div className="success-message">{formStatus.success}</div>}
+            {formStatus.error && <div className="message">{formStatus.error}</div>}
           </div>
-
-          <div className="input">
-            <label>Phone:</label>
-            <input type="text" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} placeholder="08xxxxxxxxxx" />
-            <div className="error">{errors.phone}</div>
-          </div>
-
-          <div className="input">
-            <label>Message:</label>
-            <textarea value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder="Write uour message ..." />
-            <div className="error">{errors.message}</div>
-          </div>
-
-          <button type="submit" disabled={!isFormValid()}>
-            Submit
-          </button>
-          {formStatus.success && <div className="success-message">{formStatus.success}</div>}
-          {formStatus.error && <div className="message">{formStatus.error}</div>}
         </form>
-      </div>
-      <div className="photo-section">
-        <div className="photo">
-          <img src={myPhoto} alt="" />
-        </div>
       </div>
     </section>
   );

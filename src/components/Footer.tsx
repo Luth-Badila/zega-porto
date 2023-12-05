@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <div className="footer">
       <div className="footer-sections">
         <div className="contact-follow">
-          <h3 className="contact-title">Contact and Follow Us On</h3>
+          <h3 className="contact-title">Contact and Follow Me On</h3>
           <div className="contact-icons">
             <a href="">
               <IoLogoFacebook color="white" size={40} />

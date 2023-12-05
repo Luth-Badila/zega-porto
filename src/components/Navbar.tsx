@@ -8,7 +8,7 @@ export const NavbarFixed: React.FC = () => {
   return (
     <div>
       <Navbar fixed="top" dark expand="md">
-        <NavbarBrand href="/">Brand</NavbarBrand>
+        <NavbarBrand href="#home">Luth Badila</NavbarBrand>
         <NavbarToggler
           onClick={() => {
             setIsOpen(!isOpen);
